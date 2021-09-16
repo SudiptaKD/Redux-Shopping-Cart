@@ -1,6 +1,6 @@
 import Button from "@restart/ui/esm/Button";
 import React, { useState, useEffect } from "react";
-import { Col, Container,Card, Row, ListGroup } from "react-bootstrap";
+import { Col,Card, Row, ListGroup } from "react-bootstrap";
 
 import { connect } from "react-redux";
 
