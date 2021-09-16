@@ -13,12 +13,13 @@ import Navbar from "./components/Navbar/Navbar";
 import Products from "./components/Products/Products";
 import Cart from "./components/Cart/Cart";
 import SingleItem from "./components/SingleItem/SingleItem";
+import { Container } from "react-bootstrap";
 
 function App({ current }) {
   return (
     <Router>
-      <div className="app">
         <Navbar />
+        <Container>
         <Switch>
           <Route exact path="/" component={Products} />
           <Route exact path="/cart" component={Cart} />
@@ -28,7 +29,7 @@ function App({ current }) {
             <Route exact path="/product/:id" component={SingleItem} />
           )}
         </Switch>
-      </div>
+        </Container>
     </Router>
   );
 }
