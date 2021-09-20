@@ -14,7 +14,7 @@ const Product = ({ product, addToCart, loadCurrentItem }) => {
   return (
     <>
       <Card  className='my-4 rounded text-center shadow mb-1'
-         style={{ width: '18rem',border:'none', backgroundColor:'#dae0eb' }}>
+         style={{ width: '18rem',border:'none', backgroundColor:'#dae0eb', margin:'0px auto' }}>
         <Card.Img variant="top" src={product.image} alt={product.title} style={{height:'200px'}} />
         <Card.Body>
           <Card.Title>{product.title}</Card.Title>
